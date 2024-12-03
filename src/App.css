@@ -1,0 +1,17 @@
+.sidebyside{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsidebyside{
+  position: relative;
+  left:150px;
+}
+.bichmaykaro{
+  text-align: center;
+  position: relative;
+  right:200px;
+  margin-top:20px;
+}

@@ -1,0 +1,117 @@
+/* Hero.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDF8EE; /* Light background color */
+  padding: 50px 20px;
+  position: relative;
+}
+
+.container-hero {
+  display: flex;
+  background-image: url(/src/assets/images/hero_background.png);
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Maximum width for the content */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-text-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  max-width: 600px; /* Limit the text width */
+  margin-right: 20px; /* Space between text and image */
+}
+
+h1 {
+  font-size: 36px; /* Large font size for the heading */
+  color: #2c3e50; /* Dark text color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.highlight {
+  color: #3498db; /* Highlight color */
+}
+
+p {
+  font-size: 18px; /* Font size for the paragraph */
+  color: #7f8c8d; /* Grey text color */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.search-box {
+  display: flex;
+  align-items: center; /* Center align items */
+}
+
+.search-box input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px 0 0 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for input */
+  flex: 1; /* Allow input to take available space */
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #3498db; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.search-box button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.image-content img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container-hero {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .hero-text-img {
+    flex-direction: column; /* Stack text and image */
+    align-items: center; /* Center align */
+  }
+
+  .text-content {
+    margin-right: 0; /* Remove right margin */
+    text-align: center; /* Center text */
+  }
+
+  h1 {
+    font-size: 28px; /* Smaller font size on mobile */
+  }
+
+  p {
+    font-size: 16px; /* Smaller font size on mobile */
+  }
+}

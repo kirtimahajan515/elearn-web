@@ -1,0 +1,103 @@
+/* TrackCard.css */
+
+.track-card {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  max-width: 400px; /* Maximum width for the card */
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent overflow */
+  margin: 10px; /* Margin around the card */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.track-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-image {
+  width: 100%; /* Full width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-image img {
+  width: 100%; /* Image should take full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+.card-content {
+  padding: 15px; /* Padding inside the card */
+  display: flex; /* Use flexbox for content */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items at the start */
+}
+
+.card-name {
+  font-size: 1.5rem; /* Name font size */
+  font-weight: bold; /* Bold font */
+  margin: 0 0 5px; /* Margin below name */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Title font size */
+  color: #555; /* Grey color for title */
+  margin: 0 0 10px; /* Margin below title */
+}
+
+.card-description {
+  font-size: 1rem; /* Description font size */
+  color: #777; /* Lighter grey for description */
+  margin: 0 0 10px; /* Margin below description */
+}
+
+.card-subject {
+  font-size: 0.9rem; /* Subject font size */
+  color: #3498db; /* Color for subject */
+  margin: 0 0 10px; /* Margin below subject */
+}
+
+.card-socials {
+  display: flex; /* Use flexbox for social icons */
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.card-socials a {
+  margin-right: 10px; /* Space between icons */
+}
+
+.card-socials img {
+  width: 24px; /* Set width for social icons */
+  height: 24px; /* Set height for social icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .track-card {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Margin around the card */
+  }
+
+  .card-name {
+    font-size: 1.3rem; /* Smaller name font size */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Smaller title font size */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Smaller description font size */
+  }
+
+  .card-subject {
+    font-size: 0.8rem; /* Smaller subject font size */
+  }
+
+  .card-socials img {
+    width: 20px; /* Smaller social icon size */
+    height: 20px; /* Smaller social icon size */
+  }
+}
+

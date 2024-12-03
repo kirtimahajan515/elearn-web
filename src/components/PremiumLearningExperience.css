@@ -1,0 +1,96 @@
+/* PremiumLearningExperience.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    height: auto; /* Height will adjust based on content */
+    padding: 20px; /* Padding for smaller screens */
+    background-color: #f9f9f9; /* Background color */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-section {
+    flex: 1; /* Allow the image section to grow */
+    max-width: 400px; /* Maximum width for the image section */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Allow the text section to grow */
+    max-width: 600px; /* Maximum width for the text section */
+  }
+  
+  .heading {
+    font-size: 2.5rem; /* Responsive font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .highlight {
+    color: #ff6b00;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b00; /* Replace with icon or image */
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .feature-heading {
+    font-size: 1.25rem; /* Responsive font size */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .feature-description {
+    font-size: 1rem; /* Responsive font size */
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements on smaller screens */
+      align-items: center; /* Center items */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .heading {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  
+    .feature-heading {
+      font-size: 1.1rem; /* Smaller feature heading on mobile */
+    }
+  
+    .feature-description {
+      font-size: 0.9rem; /* Smaller feature description on mobile */
+    }
+  }

@@ -1,0 +1,75 @@
+.course-card {
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .course-category {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .course-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .course-rating {
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: #f4c150; /* Gold color */
+  }
+  
+  .course-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .course-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  .card-footer {
+    background: #fff;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .join-course-button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .join-course-button:hover {
+    background: #e64a19;
+  }
+  
